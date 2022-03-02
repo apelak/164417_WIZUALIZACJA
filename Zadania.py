@@ -92,14 +92,6 @@ print(slowa.split(" "))
 
 string = "Lubie pociagi"
 float =  3.14
-hex = hex(28)
-print('{0:s} {1:f} {2:s}'.format(string, float, hex))
+hex = 0x1f
+print('{0:s} {1:f} {2:x}'.format(string, float, hex))
 print(type(hex))
-
-s = "nie no ta\n"
-f = 98.652
-h = "0xF0"
-
-print(s + "jeszcze %(to)f" % {'to': f})
-print("albo nawet {0:.3f}".format(f))
-print(int(h, 16))
