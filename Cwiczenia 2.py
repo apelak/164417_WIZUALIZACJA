@@ -52,12 +52,36 @@
 #         lista3.append(wynik)
 #     print(lista3)
 
-a = input("wczytaj pierwsza liczbe: ")
-b = input("wczytaj druga liczbe: ")
-try:
-    a = int(a)
-    b = int(b)
-    wynik = a / b
-    print(wynik)
-except ZeroDivisionError:
-    print("nie mozna dzielic przez 0")
+# a = input("wczytaj pierwsza liczbe: ")
+# b = input("wczytaj druga liczbe: ")
+# try:
+#     a = int(a)
+#     b = int(b)
+#     wynik = a / b
+#     print(wynik)
+# except ZeroDivisionError:
+#     print("nie mozna dzielic przez 0")
+# except ValueError:
+#     print("nie wczytano liczby calkowitej")
+
+# lista = ['a', 5, 5.5, [1, 2, 3]]
+# slownik = {klucz:wartosc}
+# {1:20, 'a':'b', 2:5}
+
+# lista1 = [1, 4, 5, 2, 5, 1, 2, 3, 5]
+# slownik = {1: 20, 'a': 'b', 2: 5}
+# print(slownik['a'])
+# del slownik['a']
+# print(slownik)
+# del lista1[2]
+# lista1.sort()
+# print(lista1)
+# slownik.pop(2)
+# print(slownik)
+# lista1.remove(4)
+# print(lista1)
+# lista1.reverse()
+# print(lista1)
+# slownik['k'] = 's'
+# print(slownik)
+# print(lista1.index(1))
