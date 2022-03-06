@@ -1,49 +1,50 @@
 import sys as system
+
 #Zadanie 1
 
-# ulubioneSporty = ['plywanie', 'siatkowka', 'tenis stolowy', 'silownia']
-# print(ulubioneSporty)
-# ulubioneSporty.reverse()
-# print(ulubioneSporty)
-# ulubioneSporty.append('pilka nozna')
-# ulubioneSporty.append('pilka reczna')
-# print(ulubioneSporty)
+ulubioneSporty = ['plywanie', 'siatkowka', 'tenis stolowy', 'silownia']
+print(ulubioneSporty)
+ulubioneSporty.reverse()
+print(ulubioneSporty)
+ulubioneSporty.append('pilka nozna')
+ulubioneSporty.append('pilka reczna')
+print(ulubioneSporty)
 
 #Zadanie 2
 
-# slownik = {'tzw': 'tak zwany', 'ww': 'wyzej wymieniony', 'tzn': 'to znaczy', 'itp': 'i tym podobne'}
+slownik = {'tzw': 'tak zwany', 'ww': 'wyzej wymieniony', 'tzn': 'to znaczy', 'itp': 'i tym podobne'}
 
-# #Zadanie 3
-# i = 0
-# slownikGier = {'bezi': 'Gothic', 'liga': 'league of legends', 'isaac': 'binding of isaac', 'ets': 'euro truck simulator'}
-# for x in slownikGier:
-#     print("%s: %s" % (x, slownikGier[x]))
-#     i += 1
-# print(i)
+#Zadanie 3
+i = 0
+slownikGier = {'bezi': 'Gothic', 'liga': 'league of legends', 'isaac': 'binding of isaac', 'ets': 'euro truck simulator'}
+for x in slownikGier:
+    print("%s: %s" % (x, slownikGier[x]))
+    i += 1
+print(i)
 
-# #Zadanie 4
-# zdanie = input("tutaj wpisz zdanie: ")
-# print(zdanie.count("a"))
-#
-# #Zadanie 5
-# a = system.stdin.readline()
-# b = system.stdin.readline()
-# c = system.stdin.readline()
-# wynik = int(a) ** int(b) + int(c)
-# system.stdout.write(str(wynik))
-#
-# #Zadanie 6
-#
-# a = int(input("Wczytaj pierwsza liczbe: "))
-# b = int(input("Wczytaj druga liczbe: "))
-# c = int(input("Wczytaj trzecia liczbe: "))
-#
-# if a>b & a>c:
-#     print(a ,"Jest najwieksze")
-# elif b>a & b>c:
-#     print(b, "jest najwieksze")
-# else:
-#     print(c, "jest najwieksze")
+#Zadanie 4
+zdanie = input("tutaj wpisz zdanie: ")
+print(zdanie.count("a"))
+
+#Zadanie 5
+a = system.stdin.readline()
+b = system.stdin.readline()
+c = system.stdin.readline()
+wynik = int(a) ** int(b) + int(c)
+system.stdout.write(str(wynik))
+
+#Zadanie 6
+
+a = int(input("Wczytaj pierwsza liczbe: "))
+b = int(input("Wczytaj druga liczbe: "))
+c = int(input("Wczytaj trzecia liczbe: "))
+
+if a>b & a>c:
+    print(a ,"Jest najwieksze")
+elif b>a & b>c:
+    print(b, "jest najwieksze")
+else:
+    print(c, "jest najwieksze")
 
 #zadanie 7
 lista = [3.5, 4, 8.2, 5.6, 9]
@@ -51,3 +52,21 @@ for i in lista:
     print(i ** 2, "\n")
 
 #zadanie 8
+
+lista = []
+licznik = 1
+while len(lista) < 10:
+    if licznik % 2 == 0:
+        lista.append(licznik)
+    licznik += 1
+print(lista)
+
+#Zadanie 9
+
+import math
+
+a = float(input("Podaj liczbe: "))
+try:
+    print(math.sqrt(a))
+except ValueError:
+    print("nie mozna spierwiastkowac liczby ujemnej w pierwiastku 2 stopnia")
