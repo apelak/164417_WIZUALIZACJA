@@ -80,7 +80,6 @@ def zakupy(** pl):
 print(zakupy(jaja=40, bułka=50, mleko=30))
 
 #Zadanie 9
-
 from ciągi import *
 
 print(ciągi_arytmetyczne.n_wyraz(1, 1, 100))
