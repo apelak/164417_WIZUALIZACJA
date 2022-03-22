@@ -44,14 +44,44 @@ print(pole_trapezu())
 
 #Zadanie 6
 
-def iloczyn(a1=1, q=4, n=10):
-    wynik = a1
-    kolejny_wyraz = a1
-    for x in range(n):
-        kolejny_wyraz*=q
-        wynik*=kolejny_wyraz
-    return wynik
+def iloczyn(a=1, b=4, ile=10):
+    if a == 0:
+        return 0
+    else:
+        ciag = []
+        for x in range(ile):
+            ciag.append(a*(b**x))
+        print(ciag)
+        iloczyn = 1
+        for x in ciag:
+            iloczyn *=x
+    return iloczyn
 print(iloczyn())
 
 #Zadanie 7
 
+def iloczyn2(*ciag):
+    if len(ciag) == 0:
+        return 0
+    else:
+        iloczyn = 1
+        for x in ciag:
+            iloczyn *= x
+    return iloczyn
+print(iloczyn2())
+
+#zadanie 8
+
+def zakupy(** pl):
+    print("Wszystkich produktów jest", len(pl.keys()))
+    return sum(pl.values())
+
+
+print(zakupy(jaja=40, bułka=50, mleko=30))
+
+#Zadanie 9
+
+from ciągi import *
+
+print(ciągi_arytmetyczne.n_wyraz(1, 1, 100))
+print(ciągi_geometryczne.n_wyraz(1, 5, 4))
